@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#ffc062"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-0dp"
+        tools:context=".SadhnaFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/prabhuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="(When On, it will start alarm at 9PM daily)"/>
+
+        <Switch
+            android:id="@+id/alarmSwitch"
+            android:textStyle="bold"
+            android:switchPadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn Alarm On/Off" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"
+            android:text="Please fill details and press Save Button"/>
+
+        <!-- Text Input for Name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:visibility="gone"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/bookReadyToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Book Read Today"
+        android:inputType="text"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/readingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Reading time(in mins)"
+        android:inputType="number"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/lectureTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Lecture Topic"
+        android:inputType="text"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/lectureSpeaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Lecture Speaker"
+        android:inputType="text"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/hearingDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Hearing Duration(in mins)"
+        android:inputType="number"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/dayRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Day Rest(in mins)"
+        android:inputType="number"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/totalSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Total Sleep(in hours)"
+        android:inputType="number"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/morningProgramStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Morning Program Starting Time(HH:MM)"
+        android:inputType="time"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/morningProgramEndingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Morning Program Ending Time(HH:MM)"
+        android:inputType="time"
+        android:maxLength="50" />
+
+    <EditText
+        android:id="@+id/roundsTill7AM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Rounds Till 7AM"
+        android:inputType="number"
+        android:maxLength="50"/>
+
+    <!-- Non-Editable Text Field for Date -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Non-Editable Text Field for Time -->
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginBottom="16dp" />
+
+        <!-- Text Input for Number of Rounds -->
+        <EditText
+            android:id="@+id/etRounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Total number of Rounds"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et16RoundsTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="16th Round Time (HH:MM)"
+            android:inputType="time" />
+
+        <!-- Button to Save Form -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:background="#ff4285F4"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Save" />
+
+    </LinearLayout>
+
+
+    </ScrollView>
